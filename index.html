@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Bootsrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-------------------------------------AOS CSS Links------------------------------------->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+     <!----- ----------Google font-------------------- -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-------------Custom css---------- -->
+   <link rel="stylesheet" href="./asset/css/style.css">
+   <title>survey form</title>
+</head>
+<body >
+
+<div class="main" >
+    <h1 id="tittle"   data-aos="zoom-in" >D'coffee shop survey form </h1>
+    <p id="description">
+        Thank you for taking yor time to  fill this form 
+    </p>
+    
+    <div class="main-content"  data-aos="zoom-in">
+        <div class="form-content" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+          <form action="" id="survey-form">
+            <label for="name" id="name-label">NAME</label>
+            <input   id="name"type="text" required placeholder="Enter your name" >
+            <label for="email" id="email-label">Email</label>
+            <input   id="email"type="email" required placeholder="Enter your email" >
+            <label for="number" id="number-label"> number</label>
+            <input   id="number"type="number" min="1"  max="10"required placeholder="Enter your rate" >
+
+            <label for="dropdown">How best would you describe your coffee?</label>
+            <select name="" id="dropdown">
+                <option value="regular">Regular</option>
+                <option value="classic">Classic</option>
+                <option value="premium">Premium</option>
+            </select>
+
+            <fieldset>
+                <legend>How best do you prefer your coffe served?</legend>
+                <input type="radio" name="served" checked id="hot" value="hot">
+                <label for="hot">Hot </label><br>
+                <input type="radio" name="served" checked id="cold" value="cold">
+                <label for="cold">Cold </label><br>
+                <input type="radio" name="served" checked id="warm" value="warm">
+                <label for="warm">Warm </label>
+            </fieldset>
+
+            <p>How creamy and less sugar do you prefer?</p>
+            <input type="checkbox" id="prefer" name="creamy-less sugar" value="creamy-less sugar">
+            <label for="creamy-less sugar"> creamy-less sugar</label><br>
+            <input type="checkbox" id="prefer" name="creamy-more sugar" value="creamy-more sugar">
+            <label for="creamy-more sugar"> creamy-more sugar</label><br>
+
+            <label for="comment"> Any comments or suggestions?</label>
+            <textarea  name="comment"id="comment" cols="50" rows="4">Enter your comment...</textarea><br>
+
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Bootstrap cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-------------------------------------AOS Links------------------------------------->
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration:1000,
+    });
+  </script>
+
+    
+
+</body>
+</html>
