@@ -1,14 +1,21 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #730202; 
+   
+     
+}
+.main{
+ font-family: 'Montserrat', sans-serif;
+    color: #F2DFCE; 
      background-image:url('../images/bg2.jpg');
      background-color: #000000;
-     background-position:   center ;
+     background-position:   cover ;
      background-size: cover;
-     ;
-     height:100vh;
+     background-repeat: no-repeat;
+     height:160vh;  
+}
+h1{
+  color: #730202; 
 }
  .main > h1,
  .main > p{
